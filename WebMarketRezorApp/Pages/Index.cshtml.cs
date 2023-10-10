@@ -5,18 +5,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebMarketRezorApp.Data;
 
 namespace WebMarketRezorApp.Pages
 {
     public class IndexModel : PageModel
-    {
-        private readonly ILogger<IndexModel> _logger;
+    {        
+        //Make DbConntext object
+        private readonly WebAppRazorDbContext _db;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel()
         {
-            _logger = logger;
-        }
 
+        }
         public void OnGet()
         {
 

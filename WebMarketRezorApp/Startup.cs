@@ -27,7 +27,8 @@ namespace WebMarketRezorApp
         {
             services.AddRazorPages();
             //add SqlServer Service
-            services.AddDbContext<WebAppRazorDbContext>(Option => Option.UseSqlServer(Configuration.GetConnectionString("MyConnection")));
+            services.AddDbContext<WebAppRazorDbContext>(Option => Option.UseSqlServer(
+                Configuration.GetConnectionString("MyConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
