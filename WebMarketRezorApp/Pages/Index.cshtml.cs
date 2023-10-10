@@ -17,13 +17,13 @@ namespace WebMarketRezorApp.Pages
         //Make Constractor DbContext For Read Database
         public IndexModel(WebAppRazorDbContext db)
         {
-            db = _db;
+            _db = db;
         }
         //Make property for send Dbconntext(Products talbe info) info to index page
         public IEnumerable<Products> Products { get; set; }
         public void OnGet()
         {
-
+            Products = _db.Products;
         }
     }
 }
