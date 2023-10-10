@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebMarketRezorApp.Data
 {
-    public class WebAppRazorDbContext
+    public class WebAppRazorDbContext : DbContext
     {
     }
 }
