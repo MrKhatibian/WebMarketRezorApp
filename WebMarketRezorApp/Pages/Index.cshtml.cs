@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebMarketRezorApp.Data;
+using WebMarketRezorApp.Model;
 
 namespace WebMarketRezorApp.Pages
 {
@@ -18,6 +19,8 @@ namespace WebMarketRezorApp.Pages
         {
             db = _db;
         }
+        //Make property for send Dbconntext(Products talbe info) info to index page
+        public IEnumerable<Products> Products { get; set; }
         public void OnGet()
         {
 
