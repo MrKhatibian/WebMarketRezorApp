@@ -13,7 +13,7 @@ namespace WebMarketRezorApp.Pages
     {        
         //Make DbConntext object
         private readonly WebAppRazorDbContext _db;
-
+        //Make Constractor DbContext For Read Database
         public IndexModel()
         {
 
