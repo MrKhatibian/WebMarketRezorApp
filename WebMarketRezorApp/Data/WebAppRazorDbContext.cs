@@ -14,5 +14,7 @@ namespace WebMarketRezorApp.Data
         }
         //Make DbSet Products
         public DbSet<Products> Products { get; set; }
+        //Make DbSet Elements
+        public DbSet<Elements> Elements { get; set; }       
     }
 }
