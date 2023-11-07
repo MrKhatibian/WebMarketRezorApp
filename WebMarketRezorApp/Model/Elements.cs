@@ -35,8 +35,5 @@ namespace WebMarketRezorApp.Model
         [Display(Name = "BodyText")]
         public string BodyText { get; set; }
         public DateTime CreatTime { get; set; } = DateTime.Now;
-
-
-
     }
 }
