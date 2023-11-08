@@ -16,7 +16,7 @@ namespace WebMarketRezorApp.Pages
         // make constactor for access to Database
         public FormElementsModel(WebAppRazorDbContext db)
         {
-
+            _db = db;
         }
         //Make Element prop for resive info from FormElements
         public Elements Element { get; set; }
