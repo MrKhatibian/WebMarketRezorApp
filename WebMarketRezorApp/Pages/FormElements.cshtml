@@ -22,9 +22,9 @@
                         <h5 class="card-title">General Form Elements</h5>
 
                         <!-- General Form Elements -->
-                        <form>
+                        <form method="post">
                             <div class="row mb-3">
-                                <label for="inputText" class="col-sm-2 col-form-label">Text</label>
+                                <label asp-for="Element.Text" class="col-sm-2 col-form-label"></label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.Text" type="text" class="form-control">
                                 </div>
@@ -32,37 +32,37 @@
                             <div class="row mb-3">
                                 <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control">
+                                    <input asp-for="Element.Email" type="email" class="form-control">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                                 <div class="col-sm-10">
-                                    <input type="password" class="form-control">
+                                    <input asp-for="Element.Password" type="password" class="form-control">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputNumber" class="col-sm-2 col-form-label">Number</label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control">
+                                    <input asp-for="Element.PhonNumber" type="number" class="form-control">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputNumber" class="col-sm-2 col-form-label">File Upload</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="file" id="formFile">
+                                    <input asp-for="Element.FileAddress" class="form-control" type="file" id="formFile">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
                                 <div class="col-sm-10">
-                                    <input type="date" class="form-control">
+                                    <input asp-for="Element.Date" type="date" class="form-control">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputTime" class="col-sm-2 col-form-label">Time</label>
                                 <div class="col-sm-10">
-                                    <input type="time" class="form-control">
+                                    <input asp-for="Element.Time" type="time" class="form-control">
                                 </div>
                             </div>
 
@@ -75,7 +75,7 @@
                             <div class="row mb-3">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Textarea</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" style="height: 100px"></textarea>
+                                    <textarea  class="form-control" style="height: 100px"></textarea>
                                 </div>
                             </div>
                             <fieldset class="row mb-3">
@@ -113,7 +113,7 @@
                                     </div>
 
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                                        <input asp-for="Element.BodyText" class="form-check-input" type="checkbox" id="gridCheck2" checked>
                                         <label class="form-check-label" for="gridCheck2">
                                             Example checkbox 2
                                         </label>
