@@ -20,9 +20,12 @@ namespace WebMarketRezorApp.Pages
         }
         //Make Element prop for resive info from FormElements
         public Elements Element { get; set; }
-        
-        public void OnPost()
+        // Make async post Method for Sent Data to db
+        public async Task<IActionResult> OnPost(Elements Element)
         {
+            await _db.Elements.AddAsync(Element);
+            await _db.SaveChangesAsync();
+            return RedirectToPage("/Index");
         }
     }
 }
