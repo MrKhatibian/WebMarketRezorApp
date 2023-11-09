@@ -1,7 +1,7 @@
 ﻿@page
 @model WebMarketRezorApp.Pages.ProfileModel
 @{
-    var Person = Model.Element.ToList();
+    var Element = Model.Elements.ToList();
     @*@if (true)
         {
             @foreach (var products in Model.Products)
@@ -73,7 +73,10 @@
 
                             <div class="tab-pane fade show active profile-overview" id="profile-overview">
                                 <h5 class="card-title">About</h5>
-                                <p class="small fst-italic">Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.</p>
+                                <p class="small fst-italic">@foreach (var element in Model.Elements)
+                                {
+                                    element.BodyText.ToString();
+                                }</p>
 
                                 <h5 class="card-title">Profile Details</h5>
 
