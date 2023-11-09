@@ -12,9 +12,9 @@ namespace WebMarketRezorApp.Pages
     public class ProfileModel : PageModel
     {
         // Make DbContext object
-        private readonly WebAppRazorDbContext db;
+        private readonly WebAppRazorDbContext _db;
         // Make Constactor for Read DB info
-        public ProfileModel(WebAppRazorDbContext _db)
+        public ProfileModel(WebAppRazorDbContext db)
         {
             _db = db;
         }
@@ -23,7 +23,7 @@ namespace WebMarketRezorApp.Pages
         // Send Db info to Front
         public void OnGet()
         {
-            
+            Elements = _db.Elements;
         }
     }
 }
