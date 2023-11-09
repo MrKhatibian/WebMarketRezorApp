@@ -12,6 +12,11 @@ namespace WebMarketRezorApp.Pages
     {
         // Make DbContext object
         private readonly WebAppRazorDbContext db;
+        // Make Constactor for Read DB info
+        public ProfileModel(WebAppRazorDbContext _db)
+        {
+            _db = db;
+        }
         public void OnGet()
         {
         }
