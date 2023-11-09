@@ -1,8 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
-    var articels = Model.Products.ToList();
+    ViewData["Title"] = "Home page";   
     <div class="pagetitle">
         <h1>Dashboard</h1>
         <nav>
@@ -12,19 +11,8 @@
             </ol>
         </nav>
     </div>
-    //End Page Title
-    @*@if (true)
-        {
-            @foreach (var products in Model.Products)
-            {
-
-            }
-        }
-        else
-        {
-            <h3 class="text-danger">Not Product for Show!!</h3>
-        }*@
-
+    //End Page Title   
+    //Start Section
     <section class="section dashboard">
         <div class="row">
 
