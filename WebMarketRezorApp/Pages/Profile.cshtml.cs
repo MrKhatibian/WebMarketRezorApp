@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using WebMarketRezorApp.Data;
+using WebMarketRezorApp.Model;
 
 namespace WebMarketRezorApp.Pages
 {
@@ -17,8 +18,12 @@ namespace WebMarketRezorApp.Pages
         {
             _db = db;
         }
+        //Make Propert Element for Resive Element Talbe info
+        public IEnumerable<Elements> Elements { get; set; }
+        // Send Db info to Front
         public void OnGet()
         {
+            
         }
     }
 }
