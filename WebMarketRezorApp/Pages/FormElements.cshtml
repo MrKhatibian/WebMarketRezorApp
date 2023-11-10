@@ -27,48 +27,56 @@
                                 <label asp-for="Element.Text" class="col-sm-2 col-form-label"></label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.Text" type="text" class="form-control">
+                                    <span class="text-bg-danger" asp-validation-for="Element.Text"/>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.Email" type="email" class="form-control">
+                                    <span class="text-bg-danger" asp-validation-for="Element.Email" />
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.Password" type="password" class="form-control">
+                                    <span class="text-bg-danger" asp-validation-for="Element.Password" />
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputNumber" class="col-sm-2 col-form-label">Number</label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.PhonNumber" type="number" class="form-control">
+                                    <span class="text-bg-danger" asp-validation-for="Element.PhonNumber" />
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputNumber" class="col-sm-2 col-form-label">File Upload</label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.FileAddress" class="form-control" type="file" id="formFile">
+                                    <span class="text-bg-danger" asp-validation-for="Element.FileAddress" />
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.Date" type="date" class="form-control">
+                                    <span class="text-bg-danger" asp-validation-for="Element.Date" />
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputTime" class="col-sm-2 col-form-label">Time</label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.Time" type="time" class="form-control">
+                                    <span class="text-bg-danger" asp-validation-for="Element.Time" />
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Textarea</label>
                                 <div class="col-sm-10">
                                     <textarea asp-for="Element.BodyText" class="form-control" style="height: 100px"></textarea>
+                                    <span class="text-bg-danger" asp-validation-for="Element.BodyText" />
                                 </div>
                             </div>
                             <div class="row mb-3">
