@@ -27,7 +27,7 @@
                                 <label asp-for="Element.Text" class="col-sm-2 col-form-label"></label>
                                 <div class="col-sm-10">
                                     <input asp-for="Element.Text" type="text" class="form-control">
-                                    <span class="text-bg-danger" asp-validation-for="Element.Text"/>
+                                    <span class="text-bg-danger" asp-validation-for="Element.Text" />
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -95,8 +95,10 @@
             </div>
         </div>
     </section>
-    <!--Add Partial inputValidation in to Front FormEement -->
-    @section InpoutValidationElementForm{
-                <partial name="_ValidationScriptsPartial"/>
-            }
+}
+<!--Add Partial inputValidation in to Front FormEelment -->
+@section InpoutValidationElementForm{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
 }
