@@ -23,9 +23,14 @@ namespace WebMarketRezorApp.Pages
         // Make async post Method for Sent Data to db
         public async Task<IActionResult> OnPost(Elements Element)
         {
-            await _db.Elements.AddAsync(Element);
-            await _db.SaveChangesAsync();
-            return RedirectToPage("/Index");
+            //Add Validation for Server
+            if (ModelState.IsValid)
+            {
+                await _db.Elements.AddAsync(Element);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("/Index");
+            }
+            return Page();
         }
     }
 }
