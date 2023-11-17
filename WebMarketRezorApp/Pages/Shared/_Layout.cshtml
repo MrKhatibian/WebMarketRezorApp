@@ -270,7 +270,6 @@
 
     </header>
     <!-- End Header -->
-
     <!-- ======= Sidebar ======= -->
     <aside id="sidebar" class="sidebar">
 
@@ -456,7 +455,7 @@
             <li class="nav-heading">Pages</li>
 
             <li class="nav-item">
-                <a asp-page="/Profile" class="nav-link collapsed" >
+                <a asp-page="/Profile" class="nav-link collapsed">
                     <i class="bi bi-person"></i>
                     <span>Profile</span>
                 </a>
@@ -508,11 +507,10 @@
     </aside>
     <!-- End Sidebar-->
 
-    <main id="main" class="main">        
-        @RenderBody()        
+    <main id="main" class="main">
+        @RenderBody()
     </main>
     <!-- End #main -->
-
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
@@ -528,7 +526,8 @@
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+    <!--Add Scrip Section for Input Validation -->
+    @RenderSection("InpoutValidationElementForm",false)
     <!-- Vendor JS Files -->
     <script src="~/AdminTheme/assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="~/AdminTheme/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -538,10 +537,7 @@
     <script src="~/AdminTheme/assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="~/AdminTheme/assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="~/AdminTheme/assets/vendor/php-email-form/validate.js"></script>
-    <!--Add Scrip Section for Input Validation -->
-    @RenderSection("InpoutValidationElementForm",false)
     <!-- Template Main JS File -->
     <script src="~/AdminTheme/assets/js/main.js"></script>
-
 </body>
 </html>
