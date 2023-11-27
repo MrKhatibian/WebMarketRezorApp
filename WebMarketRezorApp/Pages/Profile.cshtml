@@ -137,7 +137,7 @@
                                     <div class="row mb-3">
                                         <label for="company" class="col-md-4 col-lg-3 col-form-label">Password</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input asp-for="Element.Password" name="Password" type="password" class="form-control" id="company" value="">
+                                            <input asp-for="Element.Password" name="Password" type="password" class="form-control" id="company" value="@Model.Element.Password">
                                         </div>
                                     </div>
 
@@ -149,30 +149,30 @@
                                     </div>
 
                                     <div class="row mb-3">
-                                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">Country</label>
+                                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">ID</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input asp-for="Element.ID" name="ID" type="number" class="form-control" id="Country" value="" readonly>
+                                            <input asp-for="Element.ID" name="ID" type="number" class="form-control" id="Country" value="@Model.Element.ID" readonly>
                                         </div>
                                     </div>
 
                                     <div class="row mb-3">
                                         <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input asp-for="Element.FileAddress" name="FileAddress" type="text" class="form-control" id="Address" value="">
+                                            <input asp-for="Element.FileAddress" name="FileAddress" type="text" class="form-control" id="Address" value="@Model.Element.FileAddress">
                                         </div>
                                     </div>
 
                                     <div class="row mb-3">
                                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input asp-for="Element.PhonNumber" name="PhonNumber" type="number" class="form-control" id="Phone" value="">
+                                            <input asp-for="Element.PhonNumber" name="PhonNumber" type="number" class="form-control" id="Phone" value="@Model.Element.PhonNumber">
                                         </div>
                                     </div>
 
                                     <div class="row mb-3">
                                         <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input asp-for="Element.Email" name="Email" type="email" class="form-control" id="Email" value="">
+                                            <input asp-for="Element.Email" name="Email" type="email" class="form-control" id="Email" value="@Model.Element.Email">
                                         </div>
                                     </div>
 
