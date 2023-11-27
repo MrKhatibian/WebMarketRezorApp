@@ -27,10 +27,9 @@ namespace WebMarketRezorApp.Pages
         {
             if (id!= null)            
                 Element = _db.Elements.Find(id);
-            Element = _db.Elements.First();
-            //IE_Element = _db.Elements;
+            else
+                Element = _db.Elements.First();            
         }
-
         // Make async post Method for Sent Data to db
         public async Task<IActionResult> OnPost(Elements Element)
         {
