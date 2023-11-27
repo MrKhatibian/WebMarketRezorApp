@@ -20,22 +20,22 @@ namespace WebMarketRezorApp.Pages
         }
         [BindProperty]
         //Make Propert Element for Resive Element Talbe info
-        public IEnumerable<Elements> Elements { get; set; }
+        public IEnumerable<Elements> Element { get; set; }
         // Send Db info to Front
         public void OnGet()
         {
             //Elements = _db.Elements.Find(id);
-            //Elements = _db.Elements;
+            Element = _db.Elements;
         }
 
         // Make async post Method for Sent Data to db
-        public async Task<IActionResult> OnPost(Elements element)
+        public async Task<IActionResult> OnPost(Elements Element)
         {
             //Add Validation for Server
             if (ModelState.IsValid)
             {
                 
-                _db.Elements.Update(element);
+                _db.Elements.Update(Element);
                 await _db.SaveChangesAsync();
                 return RedirectToPage("/Profile");
             }
