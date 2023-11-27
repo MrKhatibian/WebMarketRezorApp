@@ -3,7 +3,6 @@
 @{
     <!--Add foreach for read data in Element Table-->
     @*@foreach (var Element in Model.Element) { }*@
-
     <!--Page Title-->
     <div class="pagetitle">
         <h1>Profile</h1>
@@ -122,7 +121,7 @@
                                     <div class="row mb-3">
                                         <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input asp-for="Element.Text" name="Text" type="text" class="form-control" id="fullName" value="">
+                                            <input asp-for="Element.Text" name="Text" type="text" class="form-control" id="fullName" value="@Model.Element.Text">
                                             <!--Add hiden Input for Get ID-->
                                             @*<input type="hidden" asp-for="@Element.ID" value="" />*@
                                         </div>
@@ -152,7 +151,7 @@
                                     <div class="row mb-3">
                                         <label for="Country" class="col-md-4 col-lg-3 col-form-label">Country</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input name="country" type="text" class="form-control" id="Country" value="">
+                                            <input asp-for="Element.ID" name="ID" type="number" class="form-control" id="Country" value="" readonly>
                                         </div>
                                     </div>
 
@@ -166,7 +165,7 @@
                                     <div class="row mb-3">
                                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input asp-for="Element.PhonNumber" name="PhonNumber" type="text" class="form-control" id="Phone" value="">
+                                            <input asp-for="Element.PhonNumber" name="PhonNumber" type="number" class="form-control" id="Phone" value="">
                                         </div>
                                     </div>
 
