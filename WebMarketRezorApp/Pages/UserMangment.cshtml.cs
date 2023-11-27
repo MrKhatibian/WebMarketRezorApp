@@ -20,13 +20,11 @@ namespace WebMarketRezorApp.Pages
         }
         [BindProperty]
         //Make Propert Element for Resive Element Talbe info
-        public IEnumerable<Elements> IE_Element { get; set; }
-        public Elements Element { get; set; }
+        public IEnumerable<Elements> IE_Element { get; set; }       
         // Send Db info to Front
         public void OnGet()
         {
-            Element = _db.Elements.Find(1002);
-            //IE_Element = _db.Elements;
+            IE_Element = _db.Elements;
         }        
     }
 }
