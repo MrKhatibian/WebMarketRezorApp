@@ -25,7 +25,9 @@ namespace WebMarketRezorApp.Pages
         // Send Db info to Front
         public void OnGet(int? id)
         {
-            Element = _db.Elements.Find(id);
+            if (id!= null)            
+                Element = _db.Elements.Find(id);
+            Element = _db.Elements.First();
             //IE_Element = _db.Elements;
         }
 
