@@ -23,9 +23,9 @@ namespace WebMarketRezorApp.Pages
         public IEnumerable<Elements> IE_Element { get; set; }
         public Elements Element { get; set; }
         // Send Db info to Front
-        public void OnGet()
+        public void OnGet(int? id)
         {
-            Element = _db.Elements.Find(1002);
+            Element = _db.Elements.Find(id);
             //IE_Element = _db.Elements;
         }
 
