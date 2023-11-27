@@ -11,34 +11,57 @@ namespace WebMarketRezorApp.Pages
 {
     public class ProfileModel : PageModel
     {
-        // Make DbContext object
+        //// Make DbContext object
+        //private readonly WebAppRazorDbContext _db;
+        //// Make Constactor for Read DB info
+        //public ProfileModel(WebAppRazorDbContext db)
+        //{
+        //    _db = db;
+        //}
+        //[BindProperty]
+        ////Make Propert Element for Resive Element Talbe info
+        ////public IEnumerable<Elements> Element { get; set; }
+        //public Elements Element { get; set; }
+        //// Send Db info to Front
+        ////public void OnGet()
+        ////{
+        ////    //Elements = _db.Elements.Find(id);
+        ////    Element = _db.Elements;
+        ////}
+
+        //// Make async post Method for Sent Data to db
+        //public async Task<IActionResult> OnPost(Elements Element)
+        //{
+        //    //Add Validation for Server
+        //    if (ModelState.IsValid)
+        //    {                
+        //        await _db.Elements.AddAsync(Element);
+        //        await _db.SaveChangesAsync();
+        //        return RedirectToPage("/Profile");
+        //    }
+        //    return RedirectToPage("/Index");
+        //}
+
+        // Creat obj for resive data from front
         private readonly WebAppRazorDbContext _db;
-        // Make Constactor for Read DB info
+        // make constactor for access to Database
         public ProfileModel(WebAppRazorDbContext db)
         {
             _db = db;
         }
-        [BindProperty]
-        //Make Propert Element for Resive Element Talbe info
-        public IEnumerable<Elements> Element { get; set; }
-        // Send Db info to Front
-        public void OnGet()
-        {
-            //Elements = _db.Elements.Find(id);
-            Element = _db.Elements;
-        }
-
+        //Make Element prop for resive info from FormElements
+        public Elements Element { get; set; }
         // Make async post Method for Sent Data to db
         public async Task<IActionResult> OnPost(Elements Element)
         {
             //Add Validation for Server
             if (ModelState.IsValid)
-            {                
+            {
                 await _db.Elements.AddAsync(Element);
                 await _db.SaveChangesAsync();
-                return RedirectToPage("/Profile");
+                return RedirectToPage("/Index");
             }
-            return RedirectToPage("/Index");
+            return Page();
         }
     }
 }

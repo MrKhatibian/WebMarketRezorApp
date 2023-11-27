@@ -2,7 +2,7 @@
 @model WebMarketRezorApp.Pages.ProfileModel
 @{
     <!--Add foreach for read data in Element Table-->
-    @foreach (var Element in Model.Element) { }
+    @*@foreach (var Element in Model.Element) { }*@
 
     <!--Page Title-->
     <div class="pagetitle">
@@ -122,23 +122,23 @@
                                     <div class="row mb-3">
                                         <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input name="fullName" type="text" class="form-control" id="fullName" asp-for="@Model.Element" value="@Element.Text">
+                                            <input asp-for="Element.Text" name="Text" type="text" class="form-control" id="fullName" value="">
                                             <!--Add hiden Input for Get ID-->
-                                            <input type="hidden" asp-for="@Element.ID" value="@Element.ID" />
+                                            @*<input type="hidden" asp-for="@Element.ID" value="" />*@
                                         </div>
                                     </div>
 
                                     <div class="row mb-3">
                                         <label for="about" class="col-md-4 col-lg-3 col-form-label">About</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <textarea name="about" asp-for="@Element.BodyText" class="form-control" id="about" style="height: 100px">@Element.BodyText</textarea>
+                                            <textarea asp-for="Element.BodyText" name="BodyText" class="form-control" id="about" style="height: 100px"></textarea>
                                         </div>
                                     </div>
 
                                     <div class="row mb-3">
-                                        <label for="company" class="col-md-4 col-lg-3 col-form-label">Company</label>
+                                        <label for="company" class="col-md-4 col-lg-3 col-form-label">Password</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input name="company" type="text" class="form-control" id="company" value="@Element.Text">
+                                            <input asp-for="Element.Password" name="Password" type="password" class="form-control" id="company" value="">
                                         </div>
                                     </div>
 
@@ -159,21 +159,21 @@
                                     <div class="row mb-3">
                                         <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input name="address" type="text" class="form-control" id="Address" value="@Element.FileAddress">
+                                            <input asp-for="Element.FileAddress" name="FileAddress" type="text" class="form-control" id="Address" value="">
                                         </div>
                                     </div>
 
                                     <div class="row mb-3">
                                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input name="phone" type="text" class="form-control" id="Phone" value="@Element.PhonNumber">
+                                            <input asp-for="Element.PhonNumber" name="PhonNumber" type="text" class="form-control" id="Phone" value="">
                                         </div>
                                     </div>
 
                                     <div class="row mb-3">
                                         <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                                         <div class="col-md-8 col-lg-9">
-                                            <input name="email" type="email" class="form-control" id="Email" value="@Element.Email">
+                                            <input asp-for="Element.Email" name="Email" type="email" class="form-control" id="Email" value="">
                                         </div>
                                     </div>
 
