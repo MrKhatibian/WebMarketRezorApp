@@ -35,7 +35,7 @@ namespace WebMarketRezorApp.Pages
             //Add Validation for Server
             if (ModelState.IsValid)
             {
-                await _db.Elements.AddAsync(Element);
+                _db.Elements.Update(Element);
                 await _db.SaveChangesAsync();
                 return RedirectToPage("/Profile");
             }
