@@ -13,4 +13,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebMarket.DataAccess\WebMarket.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>
