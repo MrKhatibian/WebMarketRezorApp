@@ -38,7 +38,7 @@ namespace WebMarketRezorApp.Pages
             {
                 _db.Elements.Update(Element);
                 await _db.SaveChangesAsync();
-                return RedirectToPage("/Profile");
+                return RedirectToPage("/UserMangment");
             }
             return RedirectToPage("/Index");
         }
