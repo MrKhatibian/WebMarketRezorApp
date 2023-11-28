@@ -60,7 +60,8 @@
                         <div class="tab-content pt-2">
                             <div class="tab-pane fade show active profile-overview" id="profile-overview">
                                 <!--Profile Overview-->
-                                <h5 class="card-title">About</h5>
+                                <!--Add HTML render code for Dont Show CkEditor Text-->
+                                <h5 class="card-title">@Html.Raw(Model.Element.BodyText)</h5>
                                 <p class="small fst-italic"></p>
 
                                 <h5 class="card-title">Profile Details</h5>
