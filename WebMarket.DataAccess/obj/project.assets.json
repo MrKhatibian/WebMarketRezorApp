@@ -1519,6 +1519,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "WebMarket.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WebMarket.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebMarket.Models.dll": {}
+        }
       }
     }
   },
@@ -5787,6 +5797,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "WebMarket.Models/1.0.0": {
+      "type": "project",
+      "path": "../WebMarket.Models/WebMarket.Models.csproj",
+      "msbuildProject": "../WebMarket.Models/WebMarket.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5794,7 +5809,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.2"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
+      "WebMarket.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5828,7 +5844,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Khatibian\\source\\repos\\WebMarketRezorApp\\WebMarket.Models\\WebMarket.Models.csproj": {
+              "projectPath": "C:\\Users\\Khatibian\\source\\repos\\WebMarketRezorApp\\WebMarket.Models\\WebMarket.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
