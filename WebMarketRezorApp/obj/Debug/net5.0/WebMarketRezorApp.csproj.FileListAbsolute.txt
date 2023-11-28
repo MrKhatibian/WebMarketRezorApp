@@ -73,3 +73,4 @@ C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarketRezorApp\obj\Debug\ne
 C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarketRezorApp\obj\Debug\net5.0\Razor\Pages\Profile.cshtml.g.cs
 C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarketRezorApp\obj\Debug\net5.0\WebMarketRezorApp.csproj.AssemblyReference.cache
 C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarketRezorApp\obj\Debug\net5.0\Razor\Pages\UserMangment.cshtml.g.cs
+C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarketRezorApp\obj\Debug\net5.0\Razor\Pages\Delete.cshtml.g.cs

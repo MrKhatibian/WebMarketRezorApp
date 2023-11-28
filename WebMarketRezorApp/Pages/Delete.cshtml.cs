@@ -28,7 +28,7 @@ namespace WebMarketRezorApp.Pages
         }
         // Make async post Method for Sent Data to db
         public async Task<IActionResult> OnPost(Elements Element)
-        {
+        {            
             //Add Validation for Server
             if (ModelState.IsValid)
             {
