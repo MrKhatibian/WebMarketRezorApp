@@ -24,7 +24,9 @@ namespace WebMarketRezorApp.Pages
         public void OnGet(int? id)
         {
             if (id != null)
-                Element = _db.Elements.Find(id);            
+                Element = _db.Elements.Find(id);
+            else
+                Element = _db.Elements.First();
         }
         // Make async post Method for Sent Data to db
         public async Task<IActionResult> OnPost(Elements Element)
