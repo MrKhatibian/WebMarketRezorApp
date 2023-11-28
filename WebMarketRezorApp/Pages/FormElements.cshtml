@@ -96,8 +96,21 @@
         </div>
     </section>
     <!--Add Partial inputValidation in to Front FormEelment -->
-    @section InpoutValidationElementForm{        
-        <partial name="_ValidationScriptsPartial" />     
+    @section InpoutValidationElementForm{
+        <partial name="_ValidationScriptsPartial" />
     }
+    <!--Add Script CKEditor-->
+    <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ), {
+            language: 'de'
+        } )
+        .then( editor => {
+            window.editor = editor;
+        } )
+        .catch( err => {
+            console.error( err.stack );
+        } );
+    </script>
 }
 
