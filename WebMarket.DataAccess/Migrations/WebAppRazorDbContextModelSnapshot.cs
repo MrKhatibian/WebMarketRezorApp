@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using System;
 using WebMarket.DataAccess.Data;
 
-namespace WebMarket.DataAccess.Migrations
+namespace WebMarketRezorApp.Migrations
 {
     [DbContext(typeof(WebAppRazorDbContext))]
     partial class WebAppRazorDbContextModelSnapshot : ModelSnapshot

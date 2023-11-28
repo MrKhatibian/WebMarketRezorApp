@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace WebMarket.DataAccess.Migrations
+namespace WebMarketRezorApp.Migrations
 {
     public partial class WebMarketRazorDB : Migration
     {
