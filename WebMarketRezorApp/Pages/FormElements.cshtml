@@ -75,7 +75,8 @@
                             <div class="row mb-3">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Textarea</label>
                                 <div class="col-sm-10">
-                                    <textarea asp-for="Element.BodyText" class="form-control" style="height: 100px"></textarea>
+                                    <!--Add Id editor to Textarear for use CKEditor Script-->
+                                    <textarea id="editor" asp-for="Element.BodyText" class="form-control" style="height: 100px"></textarea>
                                     <span class="text-bg-danger" asp-validation-for="Element.BodyText" />
                                 </div>
                             </div>
