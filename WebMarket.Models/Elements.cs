@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebMarketRezorApp.Model
+namespace WebMarket.Models
 {
     public class Elements
     {

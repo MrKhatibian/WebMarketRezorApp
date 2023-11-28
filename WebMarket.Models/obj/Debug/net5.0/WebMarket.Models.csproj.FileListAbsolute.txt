@@ -9,3 +9,4 @@ C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarket.Models\obj\Debug\net
 C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarket.Models\obj\Debug\net5.0\WebMarket.Models.dll
 C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarket.Models\obj\Debug\net5.0\ref\WebMarket.Models.dll
 C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarket.Models\obj\Debug\net5.0\WebMarket.Models.pdb
+C:\Users\Khatibian\source\repos\WebMarketRezorApp\WebMarket.Models\obj\Debug\net5.0\WebMarket.Models.csproj.AssemblyReference.cache

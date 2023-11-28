@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using WebMarketRezorApp.Data;
-using WebMarketRezorApp.Model;
+using System.Threading.Tasks;
+using WebMarket.DataAccess.Data;
+using WebMarket.Models;
 
 namespace WebMarketRezorApp.Pages
 {

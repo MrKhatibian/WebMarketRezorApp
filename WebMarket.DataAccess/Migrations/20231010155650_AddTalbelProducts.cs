@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace WebMarketRezorApp.Migrations
+namespace WebMarket.DataAccess.Migrations
 {
     public partial class AddTalbelProducts : Migration
     {

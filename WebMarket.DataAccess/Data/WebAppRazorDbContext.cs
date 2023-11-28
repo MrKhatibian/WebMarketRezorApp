@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebMarketRezorApp.Model;
+using WebMarket.Models;
 
-namespace WebMarketRezorApp.Data
+namespace WebMarket.DataAccess.Data
 {
     public class WebAppRazorDbContext : DbContext
     {

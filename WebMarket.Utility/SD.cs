@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebMarket.Utility
 {
-    class SD
+    public static class SD
     {
     }
 }
